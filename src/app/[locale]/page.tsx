@@ -51,12 +51,6 @@ export default async function HomePage({ params }: Props) {
           >
             {t("ctaDescribe")}
           </Link>
-          <a
-            href={`tel:${site.contact.phoneHref}`}
-            className="border border-burgundy px-6 py-3 text-burgundy hover:bg-beige-pale"
-          >
-            {site.contact.phone}
-          </a>
         </div>
 
         <CaseFinder />

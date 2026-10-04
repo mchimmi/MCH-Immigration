@@ -12,9 +12,7 @@ export const site = {
 
   contact: {
     // TODO: replace with real details
-    email: "kontakt@example.pl",
-    phone: "+48 000 000 000",
-    phoneHref: "+48000000000",
+    email: "office@mchimmigration.pl",
     // Postal addresses are not translated — mail is addressed in the local
     // administrative language regardless of the page the visitor reads.
     street: "ul. Przykładowa 1",
