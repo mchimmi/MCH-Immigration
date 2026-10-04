@@ -117,13 +117,6 @@ export function SiteHeader() {
           ))}
 
           <LanguageSwitcher />
-
-          <a
-            href={`tel:${site.contact.phoneHref}`}
-            className="bg-burgundy px-4 py-2 text-sm font-medium text-white hover:bg-burgundy-deep"
-          >
-            {t("call")}
-          </a>
         </nav>
 
         <button
