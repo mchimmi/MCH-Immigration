@@ -25,14 +25,6 @@ export async function SiteFooter() {
             <p>
               {site.contact.postcode} {site.contact.city}
             </p>
-            <p className="pt-2">
-              <a
-                href={`tel:${site.contact.phoneHref}`}
-                className="underline-offset-4 hover:underline"
-              >
-                {site.contact.phone}
-              </a>
-            </p>
             <p>
               <a
                 href={`mailto:${site.contact.email}`}

@@ -39,14 +39,6 @@ export default async function ContactPage({ params }: Props) {
           <address className="mt-4 space-y-2 text-sm not-italic leading-relaxed text-muted">
             <p>
               <a
-                href={`tel:${site.contact.phoneHref}`}
-                className="text-burgundy underline-offset-4 hover:underline"
-              >
-                {site.contact.phone}
-              </a>
-            </p>
-            <p>
-              <a
                 href={`mailto:${site.contact.email}`}
                 className="text-burgundy underline-offset-4 hover:underline"
               >
