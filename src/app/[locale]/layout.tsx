@@ -45,6 +45,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     metadataBase: new URL(siteUrl),
+    manifest: "/site.webmanifest",
     title: {
       default: `${site.name} — ${t("city")}`,
       template: `%s — ${site.name}`,
