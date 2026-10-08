@@ -25,7 +25,7 @@ export default async function ScheduleAppointmentPage({ params }: Props) {
         <p className="mt-5 text-lede leading-relaxed text-muted">{t("intro")}</p>
       </div>
 
-      <div className="mt-10 border border-rule">
+      <div className="mt-10 overflow-hidden rounded-2xl border border-rule">
         <iframe
           src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3NN4wtQVpFF7vua5hjIppPwbV-WtcTlK6eRIUMsKRJ3fOQYNOmYsx7tqY_sq_CZzE5UXTs9cME?gv=true"
           title={t("iframeTitle")}

@@ -86,14 +86,14 @@ export default async function ServicePage({ params }: Props) {
         </ul>
       </section>
 
-      <aside className="mt-16 bg-beige-pale p-8">
+      <aside className="mt-16 rounded-2xl bg-beige-pale p-8">
         <h2 className="text-xl">{tDetail("consultHeading")}</h2>
         <p className="mt-3 leading-relaxed text-muted">
           {tDetail("consultBody", { service: t(`${slug}.title`).toLowerCase() })}
         </p>
         <Link
           href={`/kontakt?sprawa=${slug}`}
-          className="mt-6 inline-block bg-burgundy px-6 py-3 text-white hover:bg-burgundy-deep"
+          className="mt-6 inline-block rounded-lg bg-burgundy px-6 py-3 text-white hover:bg-burgundy-deep"
         >
           {tDetail("consultCta")}
         </Link>

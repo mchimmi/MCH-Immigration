@@ -103,7 +103,7 @@ export function ContactForm() {
 
   if (status === "sent") {
     return (
-      <div className="border-l-4 border-burgundy bg-beige-pale p-8">
+      <div className="rounded-2xl border-l-4 border-burgundy bg-beige-pale p-8">
         <h2 className="text-xl">{t("sentTitle")}</h2>
         <p className="mt-3 leading-relaxed text-muted">{t("sentBody")}</p>
         <button
@@ -201,7 +201,7 @@ export function ContactForm() {
       {turnstileKey && <div ref={turnstileRef} />}
 
       {formError && (
-        <p role="alert" className="border-l-4 border-burgundy bg-beige-pale p-4 text-sm">
+        <p role="alert" className="rounded-lg border-l-4 border-burgundy bg-beige-pale p-4 text-sm">
           {formError}
         </p>
       )}
@@ -209,7 +209,7 @@ export function ContactForm() {
       <button
         type="submit"
         disabled={status === "sending"}
-        className="bg-burgundy px-7 py-3 text-white hover:bg-burgundy-deep disabled:opacity-60"
+        className="rounded-lg bg-burgundy px-7 py-3 text-white hover:bg-burgundy-deep disabled:opacity-60"
       >
         {status === "sending" ? t("submitting") : t("submit")}
       </button>
@@ -219,7 +219,7 @@ export function ContactForm() {
 
 function inputClass(error?: string) {
   return [
-    "w-full border bg-white px-4 py-3 text-ink",
+    "w-full rounded-lg border bg-white px-4 py-3 text-ink",
     error ? "border-burgundy" : "border-rule",
   ].join(" ");
 }

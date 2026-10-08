@@ -3,7 +3,8 @@
     "skipToContent": "Przejdź do treści"
   },
   "nav": {
-    "logoSubtitle": "Kancelaria Imigracyjna",
+    "logoLine1": "Kancelaria",
+    "logoLine2": "Prawna",
     "services": "Usługi",
     "about": "O kancelarii",
     "knowledgeBase": "Baza wiedzy",

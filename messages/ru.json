@@ -3,7 +3,8 @@
     "skipToContent": "Перейти к содержанию"
   },
   "nav": {
-    "logoSubtitle": "Иммиграционная юридическая фирма",
+    "logoLine1": "Юридическая",
+    "logoLine2": "фирма",
     "services": "Услуги",
     "about": "О фирме",
     "knowledgeBase": "База знаний",

@@ -36,14 +36,14 @@ export default async function AboutPage({ params }: Props) {
         <p>{t("paragraphs.2")}</p>
       </div>
 
-      <div className="mt-12 bg-beige-pale p-8">
+      <div className="mt-12 rounded-2xl bg-beige-pale p-8">
         <h2 className="text-xl">{t("firstCall.heading")}</h2>
         <p className="mt-3 leading-relaxed text-muted">
           {t("firstCall.body")}
         </p>
         <Link
           href="/kontakt"
-          className="mt-6 inline-block bg-burgundy px-6 py-3 text-white hover:bg-burgundy-deep"
+          className="mt-6 inline-block rounded-lg bg-burgundy px-6 py-3 text-white hover:bg-burgundy-deep"
         >
           {t("firstCall.cta")}
         </Link>

@@ -48,7 +48,7 @@ export function LanguageSwitcher({ variant = "desktop" }: { variant?: "desktop" 
               onClick={() => switchTo(l)}
               aria-current={l === locale}
               className={[
-                "border px-3 py-1.5 text-sm",
+                "rounded-lg border px-3 py-1.5 text-sm",
                 l === locale
                   ? "border-burgundy bg-burgundy text-white"
                   : "border-rule text-ink",
@@ -94,7 +94,7 @@ export function LanguageSwitcher({ variant = "desktop" }: { variant?: "desktop" 
       </button>
 
       {open && (
-        <div className="absolute right-0 top-full w-36 border border-rule bg-white py-2 shadow-lg">
+        <div className="absolute right-0 top-full w-36 overflow-hidden rounded-xl border border-rule bg-white py-2 shadow-lg">
           {routing.locales.map((l) => (
             <button
               key={l}
