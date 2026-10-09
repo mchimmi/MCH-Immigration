@@ -94,7 +94,7 @@ export function LanguageSwitcher({ variant = "desktop" }: { variant?: "desktop" 
       </button>
 
       {open && (
-        <div className="absolute right-0 top-full mt-1 w-44 overflow-hidden rounded-xl border border-rule bg-white py-2 shadow-lg">
+        <div className="absolute right-0 top-full w-44 overflow-hidden rounded-xl border border-rule bg-white py-2 shadow-lg">
           {routing.locales.map((l) => (
             <button
               key={l}
