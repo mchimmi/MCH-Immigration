@@ -3,7 +3,8 @@
     "skipToContent": "Skip to content"
   },
   "nav": {
-    "logoSubtitle": "Immigration Law Firm",
+    "logoLine1": "Immigration",
+    "logoLine2": "Law Firm",
     "services": "Services",
     "about": "About the firm",
     "knowledgeBase": "Knowledge base",

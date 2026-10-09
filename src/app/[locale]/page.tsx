@@ -35,31 +35,30 @@ export default async function HomePage({ params }: Props) {
 
   return (
     <>
-      <section className="mx-auto max-w-5xl px-5 pt-16 pb-12 sm:pt-24">
+      <section className="mx-auto max-w-5xl px-5 pt-16 pb-12 text-center sm:pt-24">
         <p className="font-display text-lede text-burgundy-soft">
           {t("tagline")}
         </p>
-        <h1 className="mt-5 max-w-2xl text-display">{t("title")}</h1>
-        <p className="mt-6 max-w-xl text-lede text-muted">{t("lede")}</p>
+        <h1 className="mx-auto mt-5 max-w-3xl text-display">{t("title")}</h1>
+        <p className="mx-auto mt-6 max-w-2xl text-lede text-muted">{t("lede")}</p>
 
         <p className="mt-6 text-sm text-muted">{t("languagesLine")}</p>
 
-        <div className="mt-9 flex flex-wrap gap-3">
+        <div className="mx-auto mt-9 flex max-w-3xl flex-col items-stretch gap-3 sm:flex-row sm:items-center">
+          <CaseFinder />
           <Link
             href="/kontakt"
-            className="bg-burgundy px-6 py-3 text-white hover:bg-burgundy-deep"
+            className="shrink-0 rounded-lg bg-burgundy px-6 py-3 text-center text-white hover:bg-burgundy-deep"
           >
             {t("ctaDescribe")}
           </Link>
         </div>
-
-        <CaseFinder />
       </section>
 
       <section className="mx-auto max-w-5xl px-5 pb-8">
         <Link
           href="/schedule-appointment"
-          className="group flex flex-col items-start justify-between gap-4 border border-burgundy bg-beige-pale px-6 py-6 sm:flex-row sm:items-center"
+          className="group flex flex-col items-start justify-between gap-4 rounded-2xl border border-burgundy bg-beige-pale px-6 py-6 sm:flex-row sm:items-center"
         >
           <span>
             <span className="block text-lg text-burgundy-deep group-hover:text-burgundy">
@@ -69,7 +68,7 @@ export default async function HomePage({ params }: Props) {
               {tSchedule("body")}
             </span>
           </span>
-          <span className="shrink-0 bg-burgundy px-6 py-3 text-sm font-medium text-white group-hover:bg-burgundy-deep">
+          <span className="shrink-0 rounded-lg bg-burgundy px-6 py-3 text-sm font-medium text-white group-hover:bg-burgundy-deep">
             {tSchedule("cta")}
           </span>
         </Link>

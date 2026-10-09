@@ -16,8 +16,10 @@
   --color-ink: #241c1f;
   --color-muted: #6b5e62;
   --color-rule: #ded3c5;
+  --color-gold: #b39a72;
 
   --font-display: var(--font-serif-display), Georgia, "Times New Roman", serif;
+  --font-logo: var(--font-sans-logo), ui-sans-serif, system-ui, sans-serif;
   --font-body: var(--font-sans-body), ui-sans-serif, system-ui, sans-serif;
 
   /* Type scale, roughly 1.25 */

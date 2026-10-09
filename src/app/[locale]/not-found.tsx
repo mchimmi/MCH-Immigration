@@ -10,7 +10,7 @@ export default function NotFound() {
       <p className="mt-4 leading-relaxed text-muted">{t("body")}</p>
       <Link
         href="/"
-        className="mt-8 inline-block bg-burgundy px-6 py-3 text-white hover:bg-burgundy-deep"
+        className="mt-8 inline-block rounded-lg bg-burgundy px-6 py-3 text-white hover:bg-burgundy-deep"
       >
         {t("cta")}
       </Link>

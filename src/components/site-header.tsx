@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { Link } from "@/i18n/navigation";
 import { site } from "@/content/site";
 import { serviceSlugs } from "@/content/services";
+import { Logo } from "@/components/logo";
 import { LanguageSwitcher } from "@/components/language-switcher";
 
 export function SiteHeader() {
@@ -42,15 +43,8 @@ export function SiteHeader() {
           scrolled ? "py-2.5" : "py-4",
         ].join(" ")}
       >
-        <Link
-          href="/"
-          className="font-display text-lg leading-tight text-burgundy-deep"
-          onClick={closeAll}
-        >
-          {site.shortName}
-          <span className="ml-2 inline-block font-body text-xs font-medium tracking-wide text-muted">
-            {t("logoSubtitle")}
-          </span>
+        <Link href="/" aria-label={site.name} onClick={closeAll}>
+          <Logo />
         </Link>
 
         <nav className="hidden items-center gap-7 sm:flex">
@@ -90,7 +84,7 @@ export function SiteHeader() {
             {servicesOpen && (
               <div
                 id="uslugi-menu"
-                className="absolute left-0 top-full w-72 border border-rule bg-white py-2 shadow-lg"
+                className="absolute left-0 top-full w-72 overflow-hidden rounded-xl border border-rule bg-white py-2 shadow-lg"
               >
                 {serviceSlugs.map((slug) => (
                   <Link
@@ -119,15 +113,18 @@ export function SiteHeader() {
           <LanguageSwitcher />
         </nav>
 
-        <button
-          type="button"
-          onClick={() => setOpen((v) => !v)}
-          aria-expanded={open}
-          aria-controls="menu-mobilne"
-          className="border border-rule px-3 py-2 text-sm sm:hidden"
-        >
-          {open ? t("close") : t("menu")}
-        </button>
+        <div className="flex items-center gap-3 sm:hidden">
+          <LanguageSwitcher />
+          <button
+            type="button"
+            onClick={() => setOpen((v) => !v)}
+            aria-expanded={open}
+            aria-controls="menu-mobilne"
+            className="rounded-lg border border-rule px-3 py-2 text-sm"
+          >
+            {open ? t("close") : t("menu")}
+          </button>
+        </div>
       </div>
 
       {open && (
@@ -167,9 +164,6 @@ export function SiteHeader() {
                 </Link>
               </li>
             ))}
-            <li>
-              <LanguageSwitcher variant="mobile" />
-            </li>
           </ul>
         </nav>
       )}

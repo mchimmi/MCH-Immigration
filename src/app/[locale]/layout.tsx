@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { Source_Serif_4, IBM_Plex_Sans } from "next/font/google";
+import { Source_Serif_4, IBM_Plex_Sans, Montserrat } from "next/font/google";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { routing, type Locale } from "@/i18n/routing";
@@ -28,6 +28,13 @@ const sansBody = IBM_Plex_Sans({
   weight: ["400", "500", "600"],
   display: "swap",
   variable: "--font-sans-body",
+});
+
+const sansLogo = Montserrat({
+  subsets: ["latin", "latin-ext", "cyrillic"],
+  weight: ["400"],
+  display: "swap",
+  variable: "--font-sans-logo",
 });
 
 export function generateStaticParams() {
@@ -70,12 +77,12 @@ export default async function LocaleLayout({ children, params }: Props) {
   const t = await getTranslations({ locale, namespace: "a11y" });
 
   return (
-    <html lang={locale} className={`${serifDisplay.variable} ${sansBody.variable}`}>
+    <html lang={locale} className={`${serifDisplay.variable} ${sansBody.variable} ${sansLogo.variable}`}>
       <body className="flex min-h-screen flex-col">
         <NextIntlClientProvider>
           <a
             href="#tresc"
-            className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:bg-burgundy focus:px-4 focus:py-2 focus:text-white"
+            className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-burgundy focus:px-4 focus:py-2 focus:text-white"
           >
             {t("skipToContent")}
           </a>

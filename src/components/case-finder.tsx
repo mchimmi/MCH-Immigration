@@ -25,7 +25,7 @@ export function CaseFinder() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="mt-8 flex max-w-lg flex-col gap-3 border border-rule bg-white p-2 sm:flex-row"
+      className="flex flex-1 flex-col gap-3 rounded-xl border border-rule bg-white p-2 sm:min-w-[22rem] sm:flex-row"
     >
       <label htmlFor="case-finder-select" className="sr-only">
         {t("label")}
@@ -62,7 +62,7 @@ export function CaseFinder() {
       <button
         type="submit"
         disabled={!slug}
-        className="bg-burgundy px-6 py-3 text-sm font-medium text-white hover:bg-burgundy-deep disabled:cursor-not-allowed disabled:opacity-40"
+        className="rounded-lg bg-burgundy px-6 py-3 text-sm font-medium text-white hover:bg-burgundy-deep disabled:cursor-not-allowed disabled:opacity-40"
       >
         {t("cta")}
       </button>
