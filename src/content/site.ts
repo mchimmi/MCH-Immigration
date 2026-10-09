@@ -26,8 +26,8 @@ export const site = {
    */
   legal: {
     entity: "MCH Kancelaria Imigracyjna",
-    nip: "TODO",
-    regon: "TODO",
+    nip: "9512657535",
+    regon: "545902120",
     // If the practice is run by an adwokat or radca prawny, the bar
     // registration details belong here too, and the professional advertising
     // rules apply to all copy on this site.
