@@ -74,9 +74,9 @@ export function LanguageSwitcher({ variant = "desktop" }: { variant?: "desktop" 
         aria-expanded={open}
         aria-haspopup="true"
         aria-label={t("language")}
-        className="flex items-center gap-1 text-sm text-ink hover:text-burgundy"
+        className="flex items-center gap-1.5 rounded-lg border border-rule px-3 py-2 text-sm font-medium tracking-wide text-ink hover:border-burgundy hover:text-burgundy"
       >
-        {LANGUAGE_NAMES[locale]}
+        {locale.toUpperCase()}
         <svg
           aria-hidden="true"
           viewBox="0 0 20 20"
@@ -94,7 +94,7 @@ export function LanguageSwitcher({ variant = "desktop" }: { variant?: "desktop" 
       </button>
 
       {open && (
-        <div className="absolute right-0 top-full w-36 overflow-hidden rounded-xl border border-rule bg-white py-2 shadow-lg">
+        <div className="absolute right-0 top-full mt-1 w-44 overflow-hidden rounded-xl border border-rule bg-white py-2 shadow-lg">
           {routing.locales.map((l) => (
             <button
               key={l}
@@ -106,7 +106,8 @@ export function LanguageSwitcher({ variant = "desktop" }: { variant?: "desktop" 
                 l === locale ? "font-medium text-burgundy" : "text-ink",
               ].join(" ")}
             >
-              {LANGUAGE_NAMES[l]}
+              <span className="inline-block w-8 font-medium">{l.toUpperCase()}</span>
+              <span className="text-muted">{LANGUAGE_NAMES[l]}</span>
             </button>
           ))}
         </div>
