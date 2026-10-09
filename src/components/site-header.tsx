@@ -113,15 +113,18 @@ export function SiteHeader() {
           <LanguageSwitcher />
         </nav>
 
-        <button
-          type="button"
-          onClick={() => setOpen((v) => !v)}
-          aria-expanded={open}
-          aria-controls="menu-mobilne"
-          className="rounded-lg border border-rule px-3 py-2 text-sm sm:hidden"
-        >
-          {open ? t("close") : t("menu")}
-        </button>
+        <div className="flex items-center gap-3 sm:hidden">
+          <LanguageSwitcher />
+          <button
+            type="button"
+            onClick={() => setOpen((v) => !v)}
+            aria-expanded={open}
+            aria-controls="menu-mobilne"
+            className="rounded-lg border border-rule px-3 py-2 text-sm"
+          >
+            {open ? t("close") : t("menu")}
+          </button>
+        </div>
       </div>
 
       {open && (
@@ -161,9 +164,6 @@ export function SiteHeader() {
                 </Link>
               </li>
             ))}
-            <li>
-              <LanguageSwitcher variant="mobile" />
-            </li>
           </ul>
         </nav>
       )}

@@ -19,7 +19,7 @@ export function Logo() {
         <span className={`${bracket} right-[12%] top-[12%] border-r-2 border-t-2`} />
         <span className={`${bracket} bottom-[12%] left-[12%] border-b-2 border-l-2`} />
         <span className={`${bracket} bottom-[12%] right-[12%] border-b-2 border-r-2`} />
-        <span className="font-display text-lg leading-none tracking-wide text-beige-pale sm:text-xl">
+        <span className="font-display text-[0.8rem] leading-none tracking-wide text-beige-pale sm:text-base">
           MCH
         </span>
       </span>
