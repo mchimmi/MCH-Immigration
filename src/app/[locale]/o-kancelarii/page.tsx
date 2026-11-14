@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
+import { images } from "@/content/images";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -28,6 +30,15 @@ export default async function AboutPage({ params }: Props) {
     <div className="mx-auto max-w-3xl px-5 pt-14">
       <h1 className="text-title sm:text-display">{t("title")}</h1>
 
+      <Image
+        src={images.aboutTeam}
+        alt=""
+        placeholder="blur"
+        loading="eager"
+        sizes="(min-width: 768px) 46rem, 100vw"
+        className="mt-8 aspect-[16/8] w-full rounded-2xl object-cover"
+      />
+
       <p className="mt-8 text-lede leading-relaxed text-muted">{t("lede")}</p>
 
       <div className="mt-10 space-y-6 leading-relaxed">
@@ -36,17 +47,26 @@ export default async function AboutPage({ params }: Props) {
         <p>{t("paragraphs.2")}</p>
       </div>
 
-      <div className="mt-12 rounded-2xl bg-beige-pale p-8">
-        <h2 className="text-xl">{t("firstCall.heading")}</h2>
-        <p className="mt-3 leading-relaxed text-muted">
-          {t("firstCall.body")}
-        </p>
-        <Link
-          href="/kontakt"
-          className="mt-6 inline-block rounded-lg bg-burgundy px-6 py-3 text-white hover:bg-burgundy-deep"
-        >
-          {t("firstCall.cta")}
-        </Link>
+      <div className="mt-12 grid overflow-hidden rounded-2xl bg-beige-pale sm:grid-cols-[minmax(0,1fr)_14rem]">
+        <div className="p-8">
+          <h2 className="text-xl">{t("firstCall.heading")}</h2>
+          <p className="mt-3 leading-relaxed text-muted">
+            {t("firstCall.body")}
+          </p>
+          <Link
+            href="/kontakt"
+            className="mt-6 inline-block rounded-lg bg-burgundy px-6 py-3 text-white hover:bg-burgundy-deep"
+          >
+            {t("firstCall.cta")}
+          </Link>
+        </div>
+        <Image
+          src={images.aboutHandshake}
+          alt=""
+          placeholder="blur"
+          sizes="(min-width: 640px) 14rem, 100vw"
+          className="aspect-[3/2] h-full w-full object-cover sm:aspect-auto"
+        />
       </div>
     </div>
   );

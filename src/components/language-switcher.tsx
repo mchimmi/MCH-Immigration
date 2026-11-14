@@ -11,10 +11,12 @@ import { routing } from "@/i18n/routing";
  * without already being able to read the page.
  */
 const LANGUAGE_NAMES: Record<string, string> = {
-  pl: "Polski",
   en: "English",
-  uk: "Українська",
+  pl: "Polski",
   ru: "Русский",
+  hi: "हिन्दी",
+  bn: "বাংলা",
+  es: "Español",
 };
 
 export function LanguageSwitcher({ variant = "desktop" }: { variant?: "desktop" | "mobile" }) {

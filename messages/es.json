@@ -1,0 +1,576 @@
+{
+  "maps": {
+    "open": "Abrir en Google Maps"
+  },
+  "a11y": {
+    "skipToContent": "Saltar al contenido"
+  },
+  "nav": {
+    "logoLine1": "Despacho de",
+    "logoLine2": "Inmigración",
+    "services": "Servicios",
+    "about": "Sobre el despacho",
+    "knowledgeBase": "Base de conocimiento",
+    "contact": "Contacto",
+    "call": "Llámenos",
+    "menu": "Menú",
+    "close": "Cerrar",
+    "language": "Elegir idioma"
+  },
+  "site": {
+    "location": "Polonia",
+    "tagline": "Donde el derecho de inmigración se encuentra con las personas",
+    "description": "Un despacho de derecho de inmigración con sede en Polonia. Tarjetas de residencia, permisos de trabajo, invitaciones para familiares, número PESEL y empadronamiento, canje del permiso de conducir."
+  },
+  "scheduleBanner": {
+    "heading": "Reserve una consulta en línea",
+    "body": "Elija el horario que mejor le convenga, sin necesidad de llamar antes.",
+    "cta": "Reservar una cita"
+  },
+  "schedulePage": {
+    "metaTitle": "Reservar una cita",
+    "metaDescription": "Reserve una consulta con el despacho directamente en línea.",
+    "title": "Reservar una cita",
+    "intro": "Elija un horario a continuación y le confirmaremos los detalles por correo electrónico.",
+    "payment": {
+      "heading": "Precio de la consulta",
+      "body": "Cada consulta de 30 minutos cuesta 120 zł. El pago se realiza después de la reserva; si no se ha recibido 30 minutos antes del inicio de la reunión, la reunión se cancelará automáticamente."
+    },
+    "iframeTitle": "Calendario de reserva de citas",
+    "consent": {
+      "title": "El calendario de reservas lo proporciona Google",
+      "body": "Para mostrarlo aquí necesitamos su consentimiento para cargar contenido integrado de Google, que instala sus propias cookies. También puede abrir el mismo calendario en el sitio web de Google.",
+      "allow": "Permitir y mostrar el calendario",
+      "openExternal": "Abrir el calendario en el sitio de Google"
+    }
+  },
+  "home": {
+    "metaTitle": "MCH Despacho de Inmigración — Polonia",
+    "metaDescription": "Un despacho de derecho de inmigración con sede en Polonia. Tarjetas de residencia, permisos de trabajo, invitaciones para familiares, número PESEL y empadronamiento, canje del permiso de conducir.",
+    "tagline": "Donde el derecho de inmigración se encuentra con las personas",
+    "title": "Nosotros nos encargamos del papeleo. Usted siga con su vida.",
+    "lede": "Un despacho de derecho de inmigración con sede en Polonia. Reunimos la documentación, controlamos los plazos y gestionamos la correspondencia con la administración, para que no tenga que hacerlo solo.",
+    "languagesLine": "Hablamos: English · polski · русский · हिन्दी · বাংলা · español",
+    "ctaDescribe": "Describa su caso",
+    "caseFinder": {
+      "label": "Elija el tipo de caso",
+      "placeholder": "¿De qué trata su caso?",
+      "cta": "Ver el procedimiento"
+    },
+    "why": {
+      "heading": "Por qué trabajar con nosotros",
+      "items": [
+        {
+          "title": "Un solo equipo, de principio a fin",
+          "body": "Un único equipo sigue la solicitud, los plazos y la correspondencia con la administración: no tiene que coordinar a varias personas a la vez."
+        },
+        {
+          "title": "Hablamos su idioma",
+          "body": "Llevamos casos en inglés, polaco, ruso, hindi, bengalí y español."
+        },
+        {
+          "title": "Siempre sabe en qué punto está",
+          "body": "Le informamos de cada carta de la administración y de los próximos pasos, sin que tenga que pedirnos una actualización."
+        }
+      ]
+    },
+    "process": {
+      "heading": "Cómo trabajamos juntos",
+      "stepLabel": "Paso {number}",
+      "steps": [
+        {
+          "title": "Conversación inicial",
+          "body": "Nos describe su situación y nos muestra los documentos que ya tiene. Determinamos qué procedimiento corresponde y si el plazo sigue vigente."
+        },
+        {
+          "title": "Preparación de la solicitud",
+          "body": "Preparamos una lista de los documentos que faltan, revisamos las traducciones y redactamos la fundamentación de la solicitud."
+        },
+        {
+          "title": "El procedimiento",
+          "body": "Presentamos la solicitud, recibimos la correspondencia de la administración y respondemos a cualquier requerimiento de información adicional."
+        }
+      ]
+    },
+    "reviews": {
+      "heading": "Opiniones de nuestros clientes satisfechos",
+      "intro": "Lo que dicen los clientes sobre trabajar con nosotros, directamente desde nuestro perfil de Google.",
+      "summary": "{rating} de 5 · {count, plural, one {# reseña} other {# reseñas}}",
+      "ratingLabel": "Valoración de {rating} sobre 5",
+      "googleLabel": "Reseñas de Google",
+      "readMore": "Leer en Google",
+      "seeAll": "Ver todas las reseñas en Google",
+      "write": "Escribir una reseña",
+      "fallbackTitle": "Lea lo que dicen nuestros clientes",
+      "fallbackBody": "Nuestras reseñas están en nuestro perfil de empresa de Google. Échele un vistazo y, si también le hemos ayudado, le agradeceríamos unas palabras.",
+      "findUs": "Dónde estamos"
+    },
+    "faqHeading": "Preguntas frecuentes",
+    "faq": [
+      {
+        "question": "¿Tengo que acudir a la oficina en persona para iniciar un caso?",
+        "answer": "No. La primera consulta puede hacerse por teléfono o en una reunión en línea. Después de la consulta presentamos su solicitud juntos, en nuestra oficina o en línea compartiendo pantalla."
+      },
+      {
+        "question": "¿Cuánto dura el procedimiento de la tarjeta de residencia?",
+        "answer": "Depende de la oficina y del tipo de caso. Ante cualquier retraso tomamos medidas para agilizar el procedimiento y, cuando es imprescindible, también presentamos una reclamación ante el tribunal."
+      },
+      {
+        "question": "¿Qué pasa si mi estancia legal vence mientras el caso está en trámite?",
+        "answer": "Presentar una solicitud completa antes de que termine su estancia legal suele darle derecho a permanecer en Polonia durante el procedimiento, lo que se confirma con el sello correspondiente en el pasaporte. Lo comprobamos de forma individual en cada caso."
+      },
+      {
+        "question": "¿Llevan casos fuera de Varsovia?",
+        "answer": "Tenemos oficinas en Varsovia, Łódź y Łowicz, pero ayudamos a clientes en toda Polonia. Como la solicitud puede presentarse en línea, también le ayudamos con la cita para la toma de huellas dactilares en su ciudad."
+      },
+      {
+        "question": "¿Cuánto cuesta que lleven mi caso?",
+        "answer": "El coste depende del tipo de procedimiento y de su complejidad. Damos un presupuesto después de la conversación inicial, cuando conocemos el alcance del trabajo, no antes."
+      }
+    ]
+  },
+  "services": {
+    "karta-pobytu-czasowego": {
+      "title": "Tarjeta de residencia temporal",
+      "summary": "Permiso de residencia temporal: trabajo, estudios, reagrupación familiar u otro motivo.",
+      "intro": "El permiso de residencia temporal es la forma más habitual de legalizar la estancia en Polonia. La solicitud se presenta en persona en la oficina del voivodato correspondiente al lugar de residencia, como muy tarde el último día de estancia legal.",
+      "who": [
+        "Personas que trabajan en Polonia con contrato",
+        "Estudiantes y doctorandos",
+        "Familiares de una persona que vive en Polonia",
+        "Personas que dirigen un negocio"
+      ],
+      "documents": [
+        "La solicitud cumplimentada y cuatro fotografías",
+        "Un documento de viaje válido (pasaporte) con copia de todas las páginas",
+        "Documentos que acrediten el motivo de la estancia (contrato, certificado universitario, certificado de matrimonio)",
+        "Justificante de seguro médico",
+        "Documentos que acrediten una fuente de ingresos estable",
+        "Justificante de domicilio"
+      ],
+      "help": [
+        "Determinamos la base legal correcta de la solicitud y comprobamos si el plazo sigue vigente",
+        "Reunimos y verificamos los documentos antes de presentarlos",
+        "Redactamos la fundamentación de la solicitud",
+        "Respondemos a los requerimientos de la oficina",
+        "Le representamos en el procedimiento mediante un poder"
+      ]
+    },
+    "pobyt-staly": {
+      "title": "Residencia permanente y estatuto de residente de larga duración UE",
+      "summary": "Un permiso indefinido para titulares de la Tarjeta del Polaco, cónyuges de ciudadanos polacos y tras años de estancia legal.",
+      "intro": "El permiso de residencia permanente se concede por tiempo indefinido, aunque la tarjeta de residencia debe renovarse cada diez años. El estatuto de residente de larga duración UE es un procedimiento distinto, disponible tras una estancia ininterrumpida en Polonia.",
+      "who": [
+        "Titulares de la Tarjeta del Polaco",
+        "Cónyuges de ciudadanos polacos, tras el periodo exigido de matrimonio y residencia",
+        "Hijos de ciudadanos polacos o de personas con permiso de residencia permanente",
+        "Personas tras el periodo exigido de estancia legal ininterrumpida"
+      ],
+      "documents": [
+        "La solicitud cumplimentada y cuatro fotografías",
+        "Un documento de viaje válido con copia",
+        "Documentos que acrediten el motivo de la solicitud",
+        "Documentos que acrediten una estancia ininterrumpida en Polonia",
+        "Para el estatuto de residente UE: acreditación del conocimiento del polaco, ingresos estables y seguro"
+      ],
+      "help": [
+        "Comprobamos si el periodo de estancia cuenta como ininterrumpido",
+        "Elegimos el procedimiento más ventajoso para su situación",
+        "Reunimos la documentación que acredita su historial de residencia",
+        "Gestionamos la correspondencia con la oficina"
+      ]
+    },
+    "zezwolenie-na-prace": {
+      "title": "Permiso de trabajo",
+      "summary": "Permisos de tipo A y C, declaraciones de encomienda de trabajo, trabajo de temporada, tanto para el trabajador como para el empleador.",
+      "intro": "Es el empleador, y no el extranjero, quien solicita el permiso de trabajo. Ayudamos a ambas partes: al trabajador a comprobar que su trabajo es legal y al empleador a tramitar el procedimiento sin errores formales.",
+      "who": [
+        "Empleadores que contratan a extranjeros",
+        "Trabajadores que cambian de empleador o de puesto",
+        "Empresas de trabajo temporal",
+        "Personas que realizan trabajo de temporada"
+      ],
+      "documents": [
+        "La solicitud del empleador junto con los documentos de registro de la empresa",
+        "El documento de viaje del extranjero",
+        "Documentos que acrediten la cualificación, si el puesto lo exige",
+        "El informe del starosta, si es necesario",
+        "Justificante del pago de la tasa"
+      ],
+      "help": [
+        "Determinamos qué tipo de permiso corresponde al puesto",
+        "Comprobamos si es necesaria una prueba del mercado laboral",
+        "Preparamos la documentación por parte del empleador",
+        "Asesoramos sobre cambios en las condiciones de empleo durante la vigencia del permiso"
+      ]
+    },
+    "zaproszenie-dla-rodziny": {
+      "title": "Invitación para familiares",
+      "summary": "Registro de una invitación en el registro de invitaciones, un documento que los familiares necesitan para solicitar el visado.",
+      "intro": "La invitación registrada por el voivoda confirma que el anfitrión proporcionará alojamiento y cubrirá los gastos de estancia de la persona invitada. Es uno de los documentos que se presentan con la solicitud de visado.",
+      "who": [
+        "Personas que invitan a familiares de visita",
+        "Extranjeros con un permiso de residencia válido en Polonia",
+        "Ciudadanos polacos que invitan a familiares del extranjero"
+      ],
+      "documents": [
+        "La solicitud de registro de la invitación",
+        "Un documento que acredite el título legal sobre la vivienda",
+        "Documentos que acrediten la capacidad de cubrir los gastos de estancia",
+        "El documento de identidad del anfitrión"
+      ],
+      "help": [
+        "Cumplimentamos la solicitud y comprobamos los umbrales económicos exigidos",
+        "Reunimos los documentos relativos a la vivienda",
+        "Le explicamos cómo se valora la invitación en el procedimiento de visado"
+      ]
+    },
+    "wymiana-prawa-jazdy": {
+      "title": "Canje del permiso de conducir",
+      "summary": "Canje de un permiso de conducir extranjero por uno polaco, sin repetir el curso cuando es posible.",
+      "intro": "Un permiso de conducir extranjero puede canjearse por uno polaco si fue expedido por un país parte del convenio correspondiente. En algunos casos se exige un examen teórico; en otros, el canje se realiza sin él.",
+      "who": [
+        "Personas con un permiso de conducir expedido fuera de la Unión Europea",
+        "Personas cuyo periodo de reconocimiento del permiso extranjero está terminando",
+        "Conductores profesionales que necesitan un documento polaco"
+      ],
+      "documents": [
+        "La solicitud de canje del permiso",
+        "El permiso de conducir extranjero original junto con una traducción jurada",
+        "Una fotografía que cumpla los requisitos",
+        "Un documento que acredite la residencia en Polonia"
+      ],
+      "help": [
+        "Comprobamos si el documento puede canjearse y si se exige examen",
+        "Gestionamos la traducción jurada",
+        "Presentamos la solicitud en el departamento de tráfico"
+      ]
+    },
+    "pesel-i-meldunek": {
+      "title": "Número PESEL y empadronamiento",
+      "summary": "Asignación del número PESEL y registro del domicilio: la base para trámites fiscales, sanidad y administración electrónica.",
+      "intro": "El número PESEL y el empadronamiento dan acceso a la mayoría de los trámites oficiales: declaraciones fiscales, registro en el médico o creación de un Perfil de Confianza. Ambos se tramitan en la oficina municipal.",
+      "who": [
+        "Personas que acaban de mudarse a Polonia",
+        "Personas que cambian de domicilio",
+        "Padres que registran a un hijo nacido en Polonia"
+      ],
+      "documents": [
+        "Un documento de identidad",
+        "Un documento que acredite el título legal sobre la vivienda o el consentimiento del propietario",
+        "La solicitud del número PESEL indicando la base legal",
+        "El formulario de declaración de residencia permanente o temporal"
+      ],
+      "help": [
+        "Determinamos la base legal correcta para asignar el número PESEL",
+        "Preparamos los formularios y revisamos los documentos de la vivienda",
+        "Gestionamos la cita en la oficina municipal"
+      ]
+    },
+    "profil-zaufany": {
+      "title": "Perfil de Confianza",
+      "summary": "Creación y confirmación del Perfil de Confianza (Profil Zaufany), una firma electrónica para trámites oficiales.",
+      "intro": "El Perfil de Confianza permite realizar trámites oficiales en línea y firmar solicitudes electrónicamente. Para crearlo se necesita un número PESEL y confirmar la identidad en un punto de confirmación o a través de la banca en línea polaca.",
+      "who": [
+        "Personas que ya tienen número PESEL",
+        "Personas que presentan solicitudes a través de mObywatel o ePUAP",
+        "Empresarios que gestionan los asuntos de su empresa en línea"
+      ],
+      "documents": [
+        "Número PESEL",
+        "Un documento de identidad",
+        "Acceso a la banca en línea polaca o una visita a un punto de confirmación"
+      ],
+      "help": [
+        "Le guiamos en el registro paso a paso",
+        "Le indicamos el método de confirmación de identidad más rápido disponible",
+        "Le ayudamos con sus primeras solicitudes presentadas electrónicamente"
+      ]
+    }
+  },
+  "knowledgeBase": {
+    "metaTitle": "Base de conocimiento",
+    "metaDescription": "Todos los procedimientos de residencia y relacionados que llevamos: para quién son, qué documentos requieren y qué hace exactamente el despacho.",
+    "title": "Base de conocimiento",
+    "intro": "Cada procedimiento que llevamos tiene aquí su propia página: para quién es, qué documentos preparar y qué hace exactamente el despacho en cada etapa."
+  },
+  "serviceDetail": {
+    "backLink": "Volver a la base de conocimiento",
+    "whoHeading": "Para quién es",
+    "documentsHeading": "Documentos necesarios",
+    "documentsNote": "Una lista orientativa: los documentos exactos dependen de la base de la solicitud.",
+    "helpHeading": "Qué hacemos",
+    "consultHeading": "Reserve una consulta",
+    "consultBody": "Cuéntenos en qué fase está su caso ({service}). Reserve una consulta en línea cuando le venga bien y le diremos qué documentos faltan todavía.",
+    "consultCta": "Reservar una cita"
+  },
+  "about": {
+    "metaTitle": "Sobre el despacho",
+    "metaDescription": "Un despacho de derecho de inmigración con sede en Polonia que lleva casos de residencia de extranjeros.",
+    "title": "Sobre el despacho",
+    "lede": "Donde el derecho de inmigración se encuentra con las personas",
+    "paragraphs": [
+      "Los trámites de residencia rara vez son una simple formalidad. Detrás de cada solicitud hay un trabajo, un hogar, el colegio de un hijo o un plazo que empieza a correr en el peor momento. Por eso la primera conversación trata de la situación, no del formulario.",
+      "Tenemos oficinas en Varsovia, Łódź y Łowicz y ayudamos a clientes en toda Polonia. Nos ocupamos de la legalización de la residencia y el trabajo, así como de los trámites relacionados sin los cuales la vida diaria en Polonia es más difícil: el número PESEL, el empadronamiento, el canje del permiso de conducir o el Perfil de Confianza.",
+      "Los clientes hablan con nosotros en los idiomas que realmente conocen. Llevamos casos en inglés, polaco, ruso, hindi, bengalí y español."
+    ],
+    "firstCall": {
+      "heading": "La primera conversación",
+      "body": "Describa su caso mediante el formulario o llámenos. Determinaremos si es un caso que podemos asumir y qué hay que preparar.",
+      "cta": "Ir a contacto"
+    }
+  },
+  "contactPage": {
+    "metaTitle": "Contacto",
+    "metaDescription": "Contacte con MCH, un despacho de inmigración con sede en Polonia. Reserve una reunión, envíe una consulta, llame o escriba: respondemos en un plazo de 6 horas.",
+    "title": "Contáctenos",
+    "intro": "Le responderemos en las próximas 6 horas.",
+    "methodsHeading": "Método preferido",
+    "methods": {
+      "book": {
+        "title": "Reservar una reunión",
+        "body": "Elija en nuestro calendario un horario para una consulta por teléfono o en línea.",
+        "cta": "Reservar una reunión"
+      },
+      "form": {
+        "title": "Formulario de consulta",
+        "body": "Describa su caso en unas frases y le responderemos por correo electrónico.",
+        "cta": "Rellenar el formulario"
+      },
+      "phone": {
+        "title": "Teléfono",
+        "body": "Llámenos en horario de oficina para hablar directamente con nuestro equipo.",
+        "cta": "Llamar"
+      },
+      "email": {
+        "title": "Enviar un correo",
+        "body": "Escríbanos y adjunte los documentos que ya tenga.",
+        "cta": "Enviar un correo"
+      }
+    },
+    "stepsHeading": "Qué ocurre cuando nos contacta",
+    "steps": [
+      {
+        "title": "Revisamos su mensaje",
+        "body": "Nuestro equipo lee su consulta y le responde en un plazo de 6 horas, por teléfono o correo electrónico, en su idioma."
+      },
+      {
+        "title": "Consulta",
+        "body": "En una breve consulta por teléfono o en línea determinamos qué procedimiento corresponde, qué documentos necesita y qué plazos están corriendo."
+      },
+      {
+        "title": "Nos encargamos del resto",
+        "body": "Cuando decida seguir adelante, le damos un presupuesto, preparamos su solicitud y llevamos el procedimiento de principio a fin."
+      }
+    ],
+    "formHeading": "Formulario de consulta",
+    "formIntro": "Cuanto más detalle nos dé, más concreta será nuestra respuesta. Bastan unas pocas frases: en esta fase no hace falta adjuntar nada.",
+    "loadingForm": "Cargando el formulario…",
+    "directHeading": "Contacto directo",
+    "hoursHeading": "Horario",
+    "languagesHeading": "Idiomas",
+    "languagesList": "inglés, polaco, ruso, hindi, bengalí, español"
+  },
+  "contactForm": {
+    "fields": {
+      "name": "Nombre y apellidos",
+      "email": "Correo electrónico",
+      "phone": "Teléfono (opcional)",
+      "matter": "De qué trata el caso",
+      "matterPlaceholder": "Elija de la lista",
+      "matterOther": "Otro asunto",
+      "message": "Describa su caso",
+      "messagePlaceholder": "En qué fase está el caso, qué documentos tiene ya y si hay algún plazo en curso.",
+      "company": "Nombre de la empresa",
+      "consent": "Consiento el tratamiento de mis datos personales con el fin de responder a mi consulta, de acuerdo con la política de privacidad."
+    },
+    "errors": {
+      "name": "Introduzca su nombre y apellidos.",
+      "tooLong": "Este campo es demasiado largo.",
+      "email": "Introduzca una dirección de correo electrónico válida.",
+      "matter": "Elija un caso de la lista.",
+      "messageMin": "Describa su caso con al menos 20 caracteres.",
+      "messageMax": "El mensaje es demasiado largo.",
+      "consent": "El consentimiento es necesario para que podamos responder a su mensaje."
+    },
+    "submit": "Enviar mensaje",
+    "submitting": "Enviando…",
+    "sentTitle": "Mensaje enviado",
+    "sentBody": "Le responderemos en un plazo de 6 horas. Si el asunto es urgente, llámenos y nos ocuparemos de inmediato.",
+    "sendAnother": "Enviar otro mensaje",
+    "api": {
+      "rateLimited": "Demasiados intentos. Inténtelo de nuevo en un momento.",
+      "invalid": "El formulario contiene errores.",
+      "turnstileFailed": "La verificación ha fallado. Actualice la página e inténtelo de nuevo.",
+      "sendFailed": "No se ha podido enviar el mensaje. Llámenos o escríbanos por correo electrónico.",
+      "genericSendFailed": "No se ha podido enviar el mensaje."
+    }
+  },
+  "footer": {
+    "contactHeading": "Contacto",
+    "hours": {
+      "weekdays": "Lunes – viernes",
+      "weekdaysTime": "9:00 – 17:00",
+      "saturday": "Sábado",
+      "saturdayTime": "con cita previa"
+    },
+    "servicesHeading": "Qué gestionamos",
+    "privacyLink": "Política de privacidad",
+    "cookieSettings": "Configuración de cookies"
+  },
+  "cookies": {
+    "title": "Valoramos su privacidad",
+    "body": "Usamos cookies estrictamente necesarias para que este sitio funcione. Con su consentimiento, también cargamos contenido integrado de Google (nuestro calendario de reservas), que instala sus propias cookies. Puede cambiar su elección en cualquier momento.",
+    "policyLink": "Política de privacidad y cookies",
+    "acceptAll": "Aceptar todas",
+    "rejectAll": "Rechazar todas",
+    "customize": "Personalizar",
+    "save": "Guardar mi elección",
+    "necessaryTitle": "Estrictamente necesarias",
+    "necessaryBody": "Recuerdan su idioma y su elección sobre cookies y protegen los formularios contra el spam. No se pueden desactivar.",
+    "alwaysOn": "Siempre activas",
+    "externalTitle": "Contenido integrado",
+    "externalBody": "Muestra el widget de reservas de Google Calendar en la página de citas. Google puede instalar cookies y tratar su dirección IP."
+  },
+  "privacy": {
+    "title": "Política de privacidad y cookies",
+    "metaDescription": "Cómo MCH Despacho de Inmigración trata los datos personales y utiliza cookies, de conformidad con el RGPD.",
+    "updated": "Última actualización: 21 de octubre de 2026",
+    "intro": "Esta política explica cómo recogemos y utilizamos datos personales cuando visita este sitio web, se pone en contacto con nosotros o utiliza nuestros servicios, y cómo utilizamos las cookies. Se facilita en virtud de los artículos 13 y 14 del Reglamento General de Protección de Datos (UE) 2016/679 (RGPD).",
+    "administrator": {
+      "heading": "Responsable del tratamiento",
+      "body": "El responsable del tratamiento de sus datos personales es {entity}, {street}, {postcode} {city}, Polonia, NIP {nip}, REGON {regon}. Para cualquier cuestión relativa a sus datos personales, incluido el ejercicio de sus derechos, escríbanos a {email}."
+    },
+    "sections": [
+      {
+        "id": "data",
+        "heading": "Qué datos tratamos",
+        "paragraphs": ["Según cómo interactúe con nosotros, tratamos:"],
+        "items": [
+          "Formulario de contacto: nombre y apellidos, correo electrónico, teléfono (opcional), tipo de caso y contenido del mensaje.",
+          "Reserva de una consulta: nombre, correo electrónico, teléfono y horario elegido, recogidos mediante la programación de citas de Google Calendar.",
+          "Correspondencia por teléfono y correo electrónico: sus datos de contacto y la información que comparta con nosotros.",
+          "Gestión de su caso: documentos de identidad y de residencia y otra información necesaria para representarle ante las autoridades, incluidos, cuando el caso lo requiera, datos de familiares.",
+          "Datos técnicos: dirección IP, tipo de navegador, fecha y hora de la visita y páginas solicitadas, registrados automáticamente en los registros del servidor por nuestro proveedor de alojamiento."
+        ]
+      },
+      {
+        "id": "purposes",
+        "heading": "Finalidades y bases jurídicas",
+        "paragraphs": ["Tratamos datos personales solo cuando el RGPD nos proporciona una base jurídica:"],
+        "items": [
+          "Responder a su consulta y programar una consulta: su consentimiento (art. 6.1.a RGPD) y la aplicación de medidas precontractuales a petición suya (art. 6.1.b).",
+          "Prestar asistencia jurídica y representarle en procedimientos: ejecución de un contrato (art. 6.1.b).",
+          "Cumplir obligaciones legales, como las contables y fiscales: obligación legal (art. 6.1.c).",
+          "Mantener la seguridad del sitio, prevenir el spam y los abusos, y formular, ejercer o defender reclamaciones: nuestro interés legítimo (art. 6.1.f).",
+          "Cargar contenido integrado de terceros que instala cookies: su consentimiento (art. 6.1.a), otorgado mediante el banner de cookies."
+        ]
+      },
+      {
+        "id": "retention",
+        "heading": "Cuánto tiempo conservamos los datos",
+        "items": [
+          "Consultas que no dan lugar a un encargo: hasta 12 meses desde el último contacto.",
+          "Expedientes de clientes: durante el encargo y después hasta la prescripción de las posibles reclamaciones, por lo general 6 años tras finalizar el caso.",
+          "Documentos contables: 5 años desde el final del año natural en que nació la obligación tributaria, según exige la legislación polaca.",
+          "Datos tratados con base en el consentimiento: hasta que retire su consentimiento, o antes si se ha cumplido la finalidad.",
+          "Registros del servidor: durante un breve periodo fijado por nuestro proveedor de alojamiento, normalmente no más de 30 días."
+        ]
+      },
+      {
+        "id": "recipients",
+        "heading": "Quién recibe sus datos",
+        "paragraphs": ["No vendemos datos personales. Solo los compartimos con entidades que nos ayudan a gestionar el sitio web y el despacho, en virtud de contratos de encargo del tratamiento, o cuando la ley lo exige:"],
+        "items": [
+          "Vercel Inc.: alojamiento del sitio web.",
+          "Nuestro proveedor de correo electrónico: entrega de los mensajes del formulario de contacto y de la correspondencia por correo.",
+          "Google Ireland Ltd y Google LLC: el calendario de reserva de citas.",
+          "Cloudflare, Inc.: protección del formulario de contacto contra spam y bots (Turnstile), cuando está activada.",
+          "Proveedores de servicios informáticos, contables y jurídicos, en la medida necesaria.",
+          "Autoridades públicas, como las oficinas de los voivodatos, los tribunales y la Oficina de Extranjería, cuando presentamos solicitudes en su nombre o cuando la ley lo exige."
+        ]
+      },
+      {
+        "id": "transfers",
+        "heading": "Transferencias fuera del Espacio Económico Europeo",
+        "paragraphs": ["Algunos de nuestros proveedores (Vercel, Google, Cloudflare) tienen su sede en Estados Unidos o pueden tratar datos allí. Estas transferencias se basan en la decisión de adecuación de la Comisión Europea para el Marco de Privacidad de Datos UE–EE. UU., en el caso de los proveedores certificados, o en las cláusulas contractuales tipo aprobadas por la Comisión Europea. Puede solicitarnos una copia de las garantías aplicables."]
+      },
+      {
+        "id": "rights",
+        "heading": "Sus derechos",
+        "paragraphs": ["En virtud del RGPD tiene derecho a:"],
+        "items": [
+          "acceder a sus datos y obtener una copia (art. 15);",
+          "rectificar los datos inexactos (art. 16);",
+          "la supresión de sus datos (art. 17);",
+          "la limitación del tratamiento (art. 18);",
+          "la portabilidad de los datos (art. 20);",
+          "oponerse al tratamiento basado en nuestro interés legítimo (art. 21);",
+          "retirar su consentimiento en cualquier momento, sin que ello afecte a la licitud del tratamiento previo a su retirada (art. 7.3);",
+          "presentar una reclamación ante la autoridad de control: el Presidente de la Oficina de Protección de Datos Personales (Prezes Urzędu Ochrony Danych Osobowych), ul. Stawki 2, 00-193 Varsovia, uodo.gov.pl."
+        ]
+      },
+      {
+        "id": "voluntary",
+        "heading": "¿Es obligatorio facilitar los datos?",
+        "paragraphs": ["Facilitar los datos es voluntario, pero sin sus datos de contacto no podemos responder a su consulta, y sin los documentos que exige un procedimiento no podemos representarle en él."]
+      },
+      {
+        "id": "automated",
+        "heading": "Decisiones automatizadas",
+        "paragraphs": ["No tomamos decisiones basadas únicamente en el tratamiento automatizado, incluida la elaboración de perfiles, que produzcan efectos jurídicos para usted."]
+      }
+    ],
+    "cookies": {
+      "heading": "Cookies",
+      "paragraphs": [
+        "Las cookies son pequeños archivos de texto que un sitio web guarda en su dispositivo. Las utilizamos de conformidad con el artículo 5.3 de la Directiva sobre la privacidad y las comunicaciones electrónicas (2002/58/CE), tal como se ha incorporado al derecho polaco, y con el RGPD.",
+        "Las cookies estrictamente necesarias son imprescindibles para el funcionamiento del sitio y no requieren consentimiento. Cualquier otra cookie se utiliza solo después de que la acepte en el banner de cookies. Puede cambiar o retirar su elección en cualquier momento mediante el enlace «Configuración de cookies» al pie de cada página, o eliminar las cookies en la configuración de su navegador."
+      ],
+      "table": {
+        "name": "Cookie",
+        "provider": "Proveedor",
+        "purpose": "Finalidad",
+        "duration": "Duración",
+        "category": "Categoría"
+      },
+      "rows": [
+        {
+          "name": "NEXT_LOCALE",
+          "provider": "Este sitio web",
+          "purpose": "Recuerda el idioma que ha elegido.",
+          "duration": "Sesión",
+          "category": "Estrictamente necesaria"
+        },
+        {
+          "name": "mch_consent",
+          "provider": "Este sitio web",
+          "purpose": "Guarda su elección sobre cookies para no volver a preguntarle en cada página.",
+          "duration": "6 meses",
+          "category": "Estrictamente necesaria"
+        },
+        {
+          "name": "NID, SID, __Secure-* y otras",
+          "provider": "Google",
+          "purpose": "Las instala Google cuando se muestra el calendario de reservas en la página de citas, por ejemplo por seguridad y para recordar preferencias.",
+          "duration": "Hasta 2 años",
+          "category": "Contenido integrado (con consentimiento)"
+        }
+      ],
+      "after": [
+        "No utilizamos cookies analíticas ni publicitarias. Si alguna vez las introducimos, primero le pediremos su consentimiento y actualizaremos esta política.",
+        "Si rechaza el contenido integrado, puede reservar una consulta abriendo nuestro calendario directamente en el sitio web de Google, o contactarnos por teléfono o correo electrónico."
+      ],
+      "settingsButton": "Cambiar la configuración de cookies"
+    },
+    "changes": {
+      "heading": "Cambios en esta política",
+      "body": "Podemos actualizar esta política cuando cambien nuestros servicios, proveedores o la legislación. La fecha de la última versión figura al principio de esta página."
+    }
+  },
+  "notFound": {
+    "title": "Esta página no existe",
+    "body": "La dirección está desactualizada o contiene un error. Los asuntos que gestionamos están en la página de inicio.",
+    "cta": "Volver a la página de inicio"
+  }
+}

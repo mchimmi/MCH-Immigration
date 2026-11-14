@@ -1,4 +1,7 @@
 {
+  "maps": {
+    "open": "Open in Google Maps"
+  },
   "a11y": {
     "skipToContent": "Skip to content"
   },
@@ -15,9 +18,9 @@
     "language": "Choose language"
   },
   "site": {
-    "city": "Warsaw",
+    "location": "Poland",
     "tagline": "Where immigration law meets humanity",
-    "description": "An immigration law firm in Warsaw. Residence cards, work permits, invitations for family, PESEL number and address registration, driving licence exchange."
+    "description": "An immigration law firm based in Poland. Residence cards, work permits, invitations for family, PESEL number and address registration, driving licence exchange."
   },
   "scheduleBanner": {
     "heading": "Book a consultation online",
@@ -29,15 +32,25 @@
     "metaDescription": "Book a consultation with the firm directly online.",
     "title": "Schedule an appointment",
     "intro": "Pick a time below and we'll confirm the details by email.",
-    "iframeTitle": "Appointment scheduling calendar"
+    "payment": {
+      "heading": "Consultation fee",
+      "body": "Each 30-minute consultation costs 120 zł. Payment is due after booking — if it has not been received 30 minutes before the meeting starts, the meeting will be cancelled automatically."
+    },
+    "iframeTitle": "Appointment scheduling calendar",
+    "consent": {
+      "title": "The booking calendar is provided by Google",
+      "body": "To show it here, we need your consent to load embedded content from Google, which sets its own cookies. You can also open the same calendar on Google's website instead.",
+      "allow": "Allow and show the calendar",
+      "openExternal": "Open the calendar on Google's website"
+    }
   },
   "home": {
-    "metaTitle": "MCH Immigration Law Firm — Warsaw",
-    "metaDescription": "An immigration law firm in Warsaw. Residence cards, work permits, invitations for family, PESEL number and address registration, driving licence exchange.",
+    "metaTitle": "MCH Immigration Law Firm — Poland",
+    "metaDescription": "An immigration law firm based in Poland. Residence cards, work permits, invitations for family, PESEL number and address registration, driving licence exchange.",
     "tagline": "Where immigration law meets humanity",
-    "title": "Residence cases handled from start to finish",
-    "lede": "An immigration law firm in Warsaw. We complete the paperwork, track deadlines and handle correspondence with the office, so you don't have to do it alone.",
-    "languagesLine": "We speak: Polish · English · Ukrainian · Russian",
+    "title": "We carry the paperwork. You carry on with your life.",
+    "lede": "An immigration law firm based in Poland. We complete the paperwork, track deadlines and handle correspondence with the office, so you don't have to do it alone.",
+    "languagesLine": "We speak: English · Polish · Russian · Hindi · Bengali · Spanish",
     "ctaDescribe": "Describe your case",
     "caseFinder": {
       "label": "Choose the type of case",
@@ -53,7 +66,7 @@
         },
         {
           "title": "We speak your language",
-          "body": "We handle cases in Polish, English, Ukrainian and Russian."
+          "body": "We handle cases in English, Polish, Russian, Hindi, Bengali and Spanish."
         },
         {
           "title": "You always know where things stand",
@@ -63,6 +76,7 @@
     },
     "process": {
       "heading": "How working together looks",
+      "stepLabel": "Step {number}",
       "steps": [
         {
           "title": "Initial conversation",
@@ -78,15 +92,28 @@
         }
       ]
     },
+    "reviews": {
+      "heading": "Feedback from our happy clients",
+      "intro": "What clients say about working with us — straight from our Google profile.",
+      "summary": "{rating} out of 5 · {count, plural, one {# review} other {# reviews}}",
+      "ratingLabel": "Rated {rating} out of 5",
+      "googleLabel": "Google reviews",
+      "readMore": "Read on Google",
+      "seeAll": "See all reviews on Google",
+      "write": "Write a review",
+      "fallbackTitle": "Read what our clients say",
+      "fallbackBody": "Our reviews live on our Google Business profile. Take a look — and if we've helped you too, we'd be grateful for a few words.",
+      "findUs": "Find us"
+    },
     "faqHeading": "Frequently asked questions",
     "faq": [
       {
         "question": "Do I need to come to the office in person to start a case?",
-        "answer": "No. The first conversation can happen through the contact form or by phone. Showing up in person at the office is usually only needed at the stage of filing the application — we let you know beforehand whenever it's necessary."
+        "answer": "No. The first consultation can take place by phone or in an online meeting. After the consultation, we submit your application together — either at our office or online through screen sharing."
       },
       {
         "question": "How long does a residence card procedure take?",
-        "answer": "It depends on the office and the type of case — anywhere from a few months to over a year during busy periods. During the initial conversation we tell you what timeframe to realistically expect for your specific procedure."
+        "answer": "It depends on the office and the type of case. Whenever your case is delayed, we take steps to speed up the proceedings, and where it is essential we also file a complaint with the court."
       },
       {
         "question": "What happens if my legal stay expires while the case is pending?",
@@ -94,7 +121,7 @@
       },
       {
         "question": "Do you handle cases outside Warsaw?",
-        "answer": "We fully handle cases where the competent authority is the Mazovian Voivodeship Office or a Warsaw district office. In other regions we can advise, but we do not represent clients before the local office."
+        "answer": "We have offices in Warsaw, Łódź and Łowicz, but we help clients across the whole of Poland. Since applications can be submitted online, we also assist you with fingerprint appointments in your own city."
       },
       {
         "question": "How much does it cost to have you handle a case?",
@@ -274,18 +301,18 @@
     "documentsNote": "An indicative list — the exact documents depend on the basis of the application.",
     "helpHeading": "What we do",
     "consultHeading": "Book a consultation",
-    "consultBody": "Tell us what stage your case is at. Select {service} in the form and we'll get back to you with what documents are still missing.",
-    "consultCta": "Go to the form"
+    "consultBody": "Tell us what stage your {service} case is at. Book a consultation online at a time that suits you, and we'll tell you which documents are still missing.",
+    "consultCta": "Book an appointment"
   },
   "about": {
     "metaTitle": "About the firm",
-    "metaDescription": "An immigration law firm in Warsaw handling residence cases for foreign nationals.",
+    "metaDescription": "An immigration law firm based in Poland handling residence cases for foreign nationals.",
     "title": "About the firm",
     "lede": "Where immigration law meets humanity",
     "paragraphs": [
       "Residence cases are rarely just a formality. Behind every application is a job, a home, a child's school, or a deadline that starts running at the worst possible moment. That's why the first conversation is about the situation, not the form.",
-      "We handle cases before the Mazovian Voivodeship Office and Warsaw's district offices. We deal with legalizing residence and work, as well as the related matters that make everyday life in Poland harder without them: a PESEL number, address registration, driving licence exchange, or a Trusted Profile.",
-      "Clients talk to us in the languages they actually know. We handle cases in Polish, English, Ukrainian and Russian."
+      "We have offices in Warsaw, Łódź and Łowicz and help clients across the whole of Poland. We deal with legalizing residence and work, as well as the related matters that make everyday life in Poland harder without them: a PESEL number, address registration, driving licence exchange, or a Trusted Profile.",
+      "Clients talk to us in the languages they actually know. We handle cases in English, Polish, Russian, Hindi, Bengali and Spanish."
     ],
     "firstCall": {
       "heading": "The first conversation",
@@ -295,14 +322,54 @@
   },
   "contactPage": {
     "metaTitle": "Contact",
-    "metaDescription": "Describe your residence case. An immigration law firm in Warsaw — residence cards, work permits, PESEL number and address registration.",
-    "title": "Describe your case",
-    "intro": "The more detail you give, the more specific our answer will be. A few sentences are enough — nothing needs to be attached at this stage.",
+    "metaDescription": "Contact MCH, an immigration law firm based in Poland. Book a meeting, send an inquiry, call or email us — we get back to you within 6 hours.",
+    "title": "Contact us",
+    "intro": "We will get back to you within the next 6 hours.",
+    "methodsHeading": "Preferred method",
+    "methods": {
+      "book": {
+        "title": "Book a meeting",
+        "body": "Choose a time for a phone or online consultation in our calendar.",
+        "cta": "Book a meeting"
+      },
+      "form": {
+        "title": "Inquiry form",
+        "body": "Describe your case in a few sentences and we'll reply by email.",
+        "cta": "Fill in the form"
+      },
+      "phone": {
+        "title": "Phone",
+        "body": "Call us during office hours to speak to our team directly.",
+        "cta": "Call us"
+      },
+      "email": {
+        "title": "Send an email",
+        "body": "Write to us and attach any documents you already have.",
+        "cta": "Send an email"
+      }
+    },
+    "stepsHeading": "What happens when you contact us",
+    "steps": [
+      {
+        "title": "We review your message",
+        "body": "Our team reads your enquiry and gets back to you within 6 hours — by phone or email, in your language."
+      },
+      {
+        "title": "Consultation",
+        "body": "In a short phone or online consultation, we work out which procedure applies, which documents you need and which deadlines are running."
+      },
+      {
+        "title": "We take it from there",
+        "body": "Once you decide to go ahead, we give you a quote, prepare your application and handle the proceedings from start to finish."
+      }
+    ],
+    "formHeading": "Inquiry form",
+    "formIntro": "The more detail you give, the more specific our answer will be. A few sentences are enough — nothing needs to be attached at this stage.",
     "loadingForm": "Loading the form…",
     "directHeading": "Direct contact",
     "hoursHeading": "Hours",
     "languagesHeading": "Languages",
-    "languagesList": "Polish, English, Ukrainian, Russian"
+    "languagesList": "English, Polish, Russian, Hindi, Bengali, Spanish"
   },
   "contactForm": {
     "fields": {
@@ -329,7 +396,7 @@
     "submit": "Send message",
     "submitting": "Sending…",
     "sentTitle": "Message sent",
-    "sentBody": "We usually reply within one business day. If the matter is urgent, call us — we'll deal with it right away.",
+    "sentBody": "We will get back to you within 6 hours. If the matter is urgent, call us — we'll deal with it right away.",
     "sendAnother": "Send another message",
     "api": {
       "rateLimited": "Too many attempts. Please try again in a moment.",
@@ -348,40 +415,176 @@
       "saturdayTime": "by appointment"
     },
     "servicesHeading": "What we handle",
-    "privacyLink": "Privacy policy"
+    "privacyLink": "Privacy policy",
+    "cookieSettings": "Cookie settings"
   },
   "privacy": {
-    "title": "Privacy policy",
-    "sections": {
-      "administrator": {
-        "heading": "Data controller",
-        "body": "The controller of personal data is {entity}, {street}, {postcode} {city}. Contact for personal data matters: {email}."
+    "title": "Privacy and cookie policy",
+    "metaDescription": "How MCH Immigration Law Firm processes personal data and uses cookies, in line with the GDPR.",
+    "updated": "Last updated: 21 October 2026",
+    "intro": "This policy explains how we collect and use personal data when you visit this website, contact us or use our services, and how we use cookies. It is provided under Articles 13 and 14 of the General Data Protection Regulation (EU) 2016/679 (GDPR).",
+    "administrator": {
+      "heading": "Data controller",
+      "body": "The controller of your personal data is {entity}, {street}, {postcode} {city}, Poland, NIP {nip}, REGON {regon}. For any matter relating to your personal data, including exercising your rights, contact us at {email}."
+    },
+    "sections": [
+      {
+        "id": "data",
+        "heading": "What data we process",
+        "paragraphs": [
+          "Depending on how you interact with us, we process:"
+        ],
+        "items": [
+          "Contact form: your full name, email address, phone number (optional), the type of case and the content of your message.",
+          "Booking a consultation: your name, email address, phone number and the chosen time, collected through Google Calendar appointment scheduling.",
+          "Phone and email correspondence: your contact details and the information you share with us.",
+          "Handling your case: identity and residence documents and other information needed to represent you before public authorities — including, where the case requires it, data about family members.",
+          "Technical data: IP address, browser type, the date and time of the visit and the pages requested, recorded automatically in server logs by our hosting provider."
+        ]
       },
-      "scope": {
-        "heading": "Scope and purpose of processing",
-        "body": "Data provided through the contact form (full name, email address, optionally a phone number, and the message content) is processed solely to respond to the enquiry, on the basis of the data subject's consent (Article 6(1)(a) GDPR)."
+      {
+        "id": "purposes",
+        "heading": "Purposes and legal bases",
+        "paragraphs": [
+          "We process personal data only where the GDPR gives us a legal basis:"
+        ],
+        "items": [
+          "Responding to your enquiry and scheduling a consultation — your consent (Art. 6(1)(a) GDPR) and steps taken at your request before entering into a contract (Art. 6(1)(b)).",
+          "Providing legal assistance and representing you in proceedings — performance of a contract (Art. 6(1)(b)).",
+          "Meeting legal obligations, such as accounting and tax record-keeping — legal obligation (Art. 6(1)(c)).",
+          "Keeping the website secure, preventing spam and abuse, and establishing or defending legal claims — our legitimate interests (Art. 6(1)(f)).",
+          "Loading embedded third-party content that sets cookies — your consent (Art. 6(1)(a)), given through the cookie banner."
+        ]
       },
-      "retention": {
-        "heading": "Retention period",
-        "body": "TODO: define the retention period for correspondence and the rules for deleting messages that did not lead to taking on a case."
+      {
+        "id": "retention",
+        "heading": "How long we keep data",
+        "items": [
+          "Enquiries that do not lead to an engagement: up to 12 months from our last contact.",
+          "Client files: for the duration of the engagement and then until any claims become time-barred, generally 6 years after the case ends.",
+          "Accounting documents: 5 years from the end of the calendar year in which the tax obligation arose, as required by Polish law.",
+          "Data processed on the basis of consent: until you withdraw your consent, or earlier if the purpose has been achieved.",
+          "Server logs: for a short period set by our hosting provider, normally no longer than 30 days."
+        ]
       },
-      "recipients": {
-        "heading": "Recipients of data",
-        "body": "Messages sent through the form are delivered via an email service provider. The site is hosted by Vercel Inc. TODO: complete the list of processors and add information about any transfer of data outside the EEA."
+      {
+        "id": "recipients",
+        "heading": "Who receives your data",
+        "paragraphs": [
+          "We do not sell personal data. We share it only with entities that help us run the website and our practice, under data processing agreements, or where the law requires it:"
+        ],
+        "items": [
+          "Vercel Inc. — website hosting.",
+          "Our email service provider — delivery of messages sent through the contact form and of email correspondence.",
+          "Google Ireland Ltd and Google LLC — the appointment booking calendar.",
+          "Cloudflare, Inc. — protection of the contact form against spam and bots (Turnstile), where enabled.",
+          "IT, accounting and legal service providers, to the extent necessary.",
+          "Public authorities, such as voivodeship offices, courts and the Office for Foreigners, when we file applications on your behalf or where the law requires it."
+        ]
       },
-      "rights": {
-        "heading": "Rights of the data subject",
-        "body": "You have the right to access your data, to rectify it, to have it erased or its processing restricted, the right to data portability, to object, to withdraw consent at any time, and to lodge a complaint with the President of the Personal Data Protection Office."
+      {
+        "id": "transfers",
+        "heading": "Transfers outside the European Economic Area",
+        "paragraphs": [
+          "Some of our providers (Vercel, Google, Cloudflare) are based in the United States or may process data there. Such transfers rely on the European Commission's adequacy decision for the EU–US Data Privacy Framework, for providers certified under it, or on Standard Contractual Clauses approved by the European Commission. You can ask us for a copy of the applicable safeguards."
+        ]
       },
-      "cookies": {
-        "heading": "Cookies",
-        "body": "The site does not use cookies for analytics or marketing purposes. Once analytics tools are added, a consent banner will need to be implemented and this section updated."
+      {
+        "id": "rights",
+        "heading": "Your rights",
+        "paragraphs": [
+          "Under the GDPR you have the right to:"
+        ],
+        "items": [
+          "access your data and receive a copy of it (Art. 15);",
+          "have inaccurate data rectified (Art. 16);",
+          "have your data erased (Art. 17);",
+          "restrict processing (Art. 18);",
+          "data portability (Art. 20);",
+          "object to processing based on our legitimate interests (Art. 21);",
+          "withdraw your consent at any time, without affecting the lawfulness of processing carried out before the withdrawal (Art. 7(3));",
+          "lodge a complaint with the supervisory authority — the President of the Personal Data Protection Office (Prezes Urzędu Ochrony Danych Osobowych), ul. Stawki 2, 00-193 Warszawa, uodo.gov.pl."
+        ]
+      },
+      {
+        "id": "voluntary",
+        "heading": "Is providing data required?",
+        "paragraphs": [
+          "Providing data is voluntary, but without your contact details we cannot reply to your enquiry, and without the documents a procedure requires we cannot represent you in it."
+        ]
+      },
+      {
+        "id": "automated",
+        "heading": "Automated decision-making",
+        "paragraphs": [
+          "We do not make decisions based solely on automated processing, including profiling, that produce legal effects for you."
+        ]
       }
+    ],
+    "cookies": {
+      "heading": "Cookies",
+      "paragraphs": [
+        "Cookies are small text files that a website stores on your device. We use them in line with Article 5(3) of the ePrivacy Directive (2002/58/EC), as implemented in Polish law, and the GDPR.",
+        "Strictly necessary cookies are needed for the site to work and do not require consent. Any other cookies are used only after you agree to them in the cookie banner. You can change or withdraw your choice at any time using the “Cookie settings” link at the bottom of every page, or delete cookies in your browser settings."
+      ],
+      "table": {
+        "name": "Cookie",
+        "provider": "Provider",
+        "purpose": "Purpose",
+        "duration": "Duration",
+        "category": "Category"
+      },
+      "rows": [
+        {
+          "name": "NEXT_LOCALE",
+          "provider": "This website",
+          "purpose": "Remembers the language you chose.",
+          "duration": "Session",
+          "category": "Strictly necessary"
+        },
+        {
+          "name": "mch_consent",
+          "provider": "This website",
+          "purpose": "Stores your cookie choices so we don't ask again on every page.",
+          "duration": "6 months",
+          "category": "Strictly necessary"
+        },
+        {
+          "name": "NID, SID, __Secure-* and others",
+          "provider": "Google",
+          "purpose": "Set by Google when the booking calendar is shown on the appointment page, e.g. for security and to remember preferences.",
+          "duration": "Up to 2 years",
+          "category": "Embedded content (with consent)"
+        }
+      ],
+      "after": [
+        "We do not use analytics or advertising cookies. If we ever introduce them, we will ask for your consent first and update this policy.",
+        "If you decline embedded content, you can still book a consultation by opening our calendar directly on Google's website, or by contacting us by phone or email."
+      ],
+      "settingsButton": "Change cookie settings"
+    },
+    "changes": {
+      "heading": "Changes to this policy",
+      "body": "We may update this policy when our services, providers or the law change. The date of the latest version is shown at the top of this page."
     }
   },
   "notFound": {
     "title": "This page doesn't exist",
     "body": "The address is outdated or contains a typo. The range of matters we handle is on the homepage.",
     "cta": "Back to the homepage"
+  },
+  "cookies": {
+    "title": "We value your privacy",
+    "body": "We use strictly necessary cookies to make this site work. With your consent, we also load embedded content from Google (our booking calendar), which sets its own cookies. You can change your choice at any time.",
+    "policyLink": "Privacy and cookie policy",
+    "acceptAll": "Accept all",
+    "rejectAll": "Reject all",
+    "customize": "Customize",
+    "save": "Save my choices",
+    "necessaryTitle": "Strictly necessary",
+    "necessaryBody": "Remember your language and cookie choices and protect forms against spam. These cannot be switched off.",
+    "alwaysOn": "Always active",
+    "externalTitle": "Embedded content",
+    "externalBody": "Shows the Google Calendar booking widget on the appointment page. Google may set cookies and process your IP address."
   }
 }

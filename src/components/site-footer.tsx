@@ -2,11 +2,13 @@ import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { site } from "@/content/site";
 import { serviceSlugs } from "@/content/services";
+import { CookieSettingsButton } from "@/components/cookie-banner";
 
 export async function SiteFooter() {
   const t = await getTranslations("footer");
   const tSite = await getTranslations("site");
   const tServices = await getTranslations("services");
+  const tMaps = await getTranslations("maps");
 
   return (
     <footer className="mt-24 bg-burgundy-deep text-beige-pale">
@@ -26,6 +28,16 @@ export async function SiteFooter() {
               {site.contact.postcode} {site.contact.city}
             </p>
             <p>
+              <a
+                href={site.maps.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline-offset-4 hover:underline"
+              >
+                {tMaps("open")} →
+              </a>
+            </p>
+            <p className="pt-2">
               <a
                 href={`mailto:${site.contact.email}`}
                 className="underline-offset-4 hover:underline"
@@ -69,12 +81,15 @@ export async function SiteFooter() {
             {site.legal.entity} · NIP {site.legal.nip} · REGON{" "}
             {site.legal.regon}
           </p>
-          <Link
-            href="/polityka-prywatnosci"
-            className="underline-offset-4 hover:underline"
-          >
-            {t("privacyLink")}
-          </Link>
+          <div className="flex gap-5">
+            <Link
+              href="/polityka-prywatnosci"
+              className="underline-offset-4 hover:underline"
+            >
+              {t("privacyLink")}
+            </Link>
+            <CookieSettingsButton label={t("cookieSettings")} />
+          </div>
         </div>
       </div>
     </footer>

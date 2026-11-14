@@ -18,9 +18,12 @@
   --color-rule: #ded3c5;
   --color-gold: #b39a72;
 
-  --font-display: var(--font-serif-display), Georgia, "Times New Roman", serif;
-  --font-logo: var(--font-sans-logo), ui-sans-serif, system-ui, sans-serif;
-  --font-body: var(--font-sans-body), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-serif-display), var(--font-serif-devanagari),
+    var(--font-serif-bengali), Georgia, "Times New Roman", serif;
+  --font-logo: var(--font-sans-logo), var(--font-sans-devanagari),
+    var(--font-sans-bengali), ui-sans-serif, system-ui, sans-serif;
+  --font-body: var(--font-sans-body), var(--font-sans-devanagari),
+    var(--font-sans-bengali), ui-sans-serif, system-ui, sans-serif;
 
   /* Type scale, roughly 1.25 */
   --text-display: clamp(2.25rem, 6.5vw, 3.25rem);
@@ -53,6 +56,16 @@
     font-family: var(--font-display);
     color: var(--color-burgundy-deep);
     text-wrap: balance;
+  }
+
+  /* Devanagari and Bengali letters join into conjuncts; any letter-spacing
+     (the logo's wide tracking, the display size's tightening) pulls them
+     apart and browsers stop forming the ligatures. */
+  :lang(hi),
+  :lang(hi) *,
+  :lang(bn),
+  :lang(bn) * {
+    letter-spacing: normal !important;
   }
 
   /* Keyboard focus must stay visible everywhere. */

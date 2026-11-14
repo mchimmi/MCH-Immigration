@@ -7,6 +7,7 @@ import { site } from "@/content/site";
 import { serviceSlugs } from "@/content/services";
 import { Logo } from "@/components/logo";
 import { LanguageSwitcher } from "@/components/language-switcher";
+import { SocialLinks } from "@/components/social-links";
 
 export function SiteHeader() {
   const t = useTranslations("nav");
@@ -36,137 +37,149 @@ export function SiteHeader() {
   ];
 
   return (
-    <header className="sticky top-0 z-40 border-b border-rule bg-white/95 backdrop-blur">
-      <div
-        className={[
-          "mx-auto flex max-w-5xl items-center justify-between px-5 transition-[padding] duration-200",
-          scrolled ? "py-2.5" : "py-4",
-        ].join(" ")}
-      >
-        <Link href="/" aria-label={site.name} onClick={closeAll}>
-          <Logo />
-        </Link>
+    // A floating bar: the header itself is transparent and only provides the
+    // inset; the translucent white panel inside is what visitors see.
+    <header className="sticky top-0 z-40 px-3 pt-3 sm:px-5 sm:pt-4">
+      <div className="mx-auto max-w-6xl rounded-2xl border border-rule bg-white/90 shadow-lg shadow-burgundy-deep/10 backdrop-blur-md">
+        <div
+          className={[
+            "flex items-center justify-between px-4 transition-[padding] duration-200 sm:px-6",
+            scrolled ? "py-2" : "py-3",
+          ].join(" ")}
+        >
+          <Link href="/" aria-label={site.name} onClick={closeAll}>
+            <Logo />
+          </Link>
 
-        <nav className="hidden items-center gap-7 sm:flex">
-          <div
-            className="relative"
-            onMouseEnter={() => setServicesOpen(true)}
-            onMouseLeave={() => setServicesOpen(false)}
-          >
+          <nav className="hidden items-center gap-5 sm:flex lg:gap-7">
+            <div
+              className="relative"
+              onMouseEnter={() => setServicesOpen(true)}
+              onMouseLeave={() => setServicesOpen(false)}
+            >
+              <button
+                type="button"
+                onClick={() => setServicesOpen((v) => !v)}
+                aria-expanded={servicesOpen}
+                aria-haspopup="true"
+                aria-controls="uslugi-menu"
+                className="flex items-center gap-1 text-sm text-ink hover:text-burgundy"
+              >
+                {t("services")}
+                <svg
+                  aria-hidden="true"
+                  viewBox="0 0 20 20"
+                  className={[
+                    "size-3 text-burgundy-soft transition-transform",
+                    servicesOpen ? "rotate-180" : "",
+                  ].join(" ")}
+                >
+                  <path
+                    d="M5 7.5L10 12.5L15 7.5"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </button>
+
+              {servicesOpen && (
+                <div
+                  id="uslugi-menu"
+                  className="absolute left-0 top-full w-72 overflow-hidden rounded-xl border border-rule bg-white py-2 shadow-lg"
+                >
+                  {serviceSlugs.map((slug) => (
+                    <Link
+                      key={slug}
+                      href={`/uslugi/${slug}`}
+                      onClick={closeAll}
+                      className="block px-4 py-2.5 text-sm text-ink hover:bg-beige-pale hover:text-burgundy"
+                    >
+                      {tServices(`${slug}.title`)}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            {navLinks.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="text-sm text-ink underline-offset-4 hover:text-burgundy hover:underline"
+              >
+                {item.label}
+              </Link>
+            ))}
+
+            <div className="flex items-center gap-2">
+              <div className="hidden md:block">
+                <SocialLinks />
+              </div>
+              <LanguageSwitcher />
+            </div>
+          </nav>
+
+          <div className="flex items-center gap-3 sm:hidden">
+            <LanguageSwitcher />
             <button
               type="button"
-              onClick={() => setServicesOpen((v) => !v)}
-              aria-expanded={servicesOpen}
-              aria-haspopup="true"
-              aria-controls="uslugi-menu"
-              className="flex items-center gap-1 text-sm text-ink hover:text-burgundy"
+              onClick={() => setOpen((v) => !v)}
+              aria-expanded={open}
+              aria-controls="menu-mobilne"
+              className="rounded-lg border border-rule px-3 py-2 text-sm"
             >
-              {t("services")}
-              <svg
-                aria-hidden="true"
-                viewBox="0 0 20 20"
-                className={[
-                  "size-3 text-burgundy-soft transition-transform",
-                  servicesOpen ? "rotate-180" : "",
-                ].join(" ")}
-              >
-                <path
-                  d="M5 7.5L10 12.5L15 7.5"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
+              {open ? t("close") : t("menu")}
             </button>
-
-            {servicesOpen && (
-              <div
-                id="uslugi-menu"
-                className="absolute left-0 top-full w-72 overflow-hidden rounded-xl border border-rule bg-white py-2 shadow-lg"
-              >
-                {serviceSlugs.map((slug) => (
-                  <Link
-                    key={slug}
-                    href={`/uslugi/${slug}`}
-                    onClick={closeAll}
-                    className="block px-4 py-2.5 text-sm text-ink hover:bg-beige-pale hover:text-burgundy"
-                  >
-                    {tServices(`${slug}.title`)}
-                  </Link>
-                ))}
-              </div>
-            )}
           </div>
-
-          {navLinks.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="text-sm text-ink underline-offset-4 hover:text-burgundy hover:underline"
-            >
-              {item.label}
-            </Link>
-          ))}
-
-          <LanguageSwitcher />
-        </nav>
-
-        <div className="flex items-center gap-3 sm:hidden">
-          <LanguageSwitcher />
-          <button
-            type="button"
-            onClick={() => setOpen((v) => !v)}
-            aria-expanded={open}
-            aria-controls="menu-mobilne"
-            className="rounded-lg border border-rule px-3 py-2 text-sm"
-          >
-            {open ? t("close") : t("menu")}
-          </button>
         </div>
-      </div>
 
-      {open && (
-        <nav
-          id="menu-mobilne"
-          className="border-t border-rule bg-beige-pale sm:hidden"
-        >
-          <ul className="mx-auto max-w-5xl px-5 py-2">
-            <li className="border-b border-rule">
-              <details>
-                <summary className="cursor-pointer list-none py-3 text-ink">
-                  {t("services")}
-                </summary>
-                <ul className="pb-2 pl-3">
-                  {serviceSlugs.map((slug) => (
-                    <li key={slug}>
-                      <Link
-                        href={`/uslugi/${slug}`}
-                        onClick={closeAll}
-                        className="block py-2 text-sm text-muted hover:text-burgundy"
-                      >
-                        {tServices(`${slug}.title`)}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </details>
-            </li>
-            {navLinks.map((item) => (
-              <li key={item.href} className="border-b border-rule">
-                <Link
-                  href={item.href}
-                  onClick={closeAll}
-                  className="block py-3 text-ink"
-                >
-                  {item.label}
-                </Link>
+        {open && (
+          <nav
+            id="menu-mobilne"
+            className="border-t border-rule sm:hidden"
+          >
+            <ul className="px-4 py-2">
+              <li className="border-b border-rule">
+                <details>
+                  <summary className="cursor-pointer list-none py-3 text-ink">
+                    {t("services")}
+                  </summary>
+                  <ul className="pb-2 pl-3">
+                    {serviceSlugs.map((slug) => (
+                      <li key={slug}>
+                        <Link
+                          href={`/uslugi/${slug}`}
+                          onClick={closeAll}
+                          className="block py-2 text-sm text-muted hover:text-burgundy"
+                        >
+                          {tServices(`${slug}.title`)}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </details>
               </li>
-            ))}
-          </ul>
-        </nav>
-      )}
+              {navLinks.map((item) => (
+                <li key={item.href} className="border-b border-rule last:border-b-0">
+                  <Link
+                    href={item.href}
+                    onClick={closeAll}
+                    className="block py-3 text-ink"
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            {/* No room beside the Menu button on phones, so the icons sit
+                at the foot of the open menu instead. */}
+            <SocialLinks className="border-t border-rule px-3 py-2" />
+          </nav>
+        )}
+      </div>
     </header>
   );
 }
