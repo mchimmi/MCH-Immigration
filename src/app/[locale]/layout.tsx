@@ -1,14 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import {
-  Source_Serif_4,
-  IBM_Plex_Sans,
-  Montserrat,
-  Noto_Sans_Devanagari,
-  Noto_Serif_Devanagari,
-  Noto_Sans_Bengali,
-  Noto_Serif_Bengali,
-} from "next/font/google";
+import { Source_Serif_4, IBM_Plex_Sans, Montserrat } from "next/font/google";
+import localFont from "next/font/local";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { routing, type Locale } from "@/i18n/routing";
@@ -50,36 +43,75 @@ const sansLogo = Montserrat({
  * None of the brand faces cover Devanagari (Hindi) or Bengali, so these sit
  * behind them in the font stacks in globals.css. Not preloaded: the browser
  * only fetches them (via unicode-range) on pages that contain those scripts.
+ *
+ * Self-hosted from src/fonts rather than next/font/google: the Noto families
+ * are large, and Turbopack does not retry a failed Google download, so they
+ * intermittently broke the Vercel build. Each file is Google's variable-weight
+ * subset (400–600) with Google's own unicode-range — see src/fonts/README.md.
+ * The ranges are repeated per call because font loader options must be
+ * literals.
  */
-const devanagariSerif = Noto_Serif_Devanagari({
-  subsets: ["devanagari"],
-  weight: ["400", "600"],
+const devanagariSerif = localFont({
+  src: "../../fonts/noto-serif-devanagari.woff2",
+  weight: "400 600",
   display: "swap",
   preload: false,
+  adjustFontFallback: false,
+  declarations: [
+    {
+      prop: "unicode-range",
+      value:
+        "U+0900-097F, U+1CD0-1CF4, U+1CF7-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B0A",
+    },
+  ],
   variable: "--font-serif-devanagari",
 });
 
-const devanagariSans = Noto_Sans_Devanagari({
-  subsets: ["devanagari"],
-  weight: ["400", "500", "600"],
+const devanagariSans = localFont({
+  src: "../../fonts/noto-sans-devanagari.woff2",
+  weight: "400 600",
   display: "swap",
   preload: false,
+  adjustFontFallback: false,
+  declarations: [
+    {
+      prop: "unicode-range",
+      value:
+        "U+0900-097F, U+1CD0-1CF4, U+1CF7-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B0A",
+    },
+  ],
   variable: "--font-sans-devanagari",
 });
 
-const bengaliSerif = Noto_Serif_Bengali({
-  subsets: ["bengali"],
-  weight: ["400", "600"],
+const bengaliSerif = localFont({
+  src: "../../fonts/noto-serif-bengali.woff2",
+  weight: "400 600",
   display: "swap",
   preload: false,
+  adjustFontFallback: false,
+  declarations: [
+    {
+      prop: "unicode-range",
+      value:
+        "U+0951-0952, U+0964-0965, U+0980-09FE, U+1CD0, U+1CD2, U+1CD5-1CD6, U+1CD8, U+1CE1, U+1CEA, U+1CED, U+1CF2, U+1CF5-1CF7, U+200C-200D, U+20B9, U+25CC, U+A8F1, U+11DF0-11DF1",
+    },
+  ],
   variable: "--font-serif-bengali",
 });
 
-const bengaliSans = Noto_Sans_Bengali({
-  subsets: ["bengali"],
-  weight: ["400", "500", "600"],
+const bengaliSans = localFont({
+  src: "../../fonts/noto-sans-bengali.woff2",
+  weight: "400 600",
   display: "swap",
   preload: false,
+  adjustFontFallback: false,
+  declarations: [
+    {
+      prop: "unicode-range",
+      value:
+        "U+0951-0952, U+0964-0965, U+0980-09FE, U+1CD0, U+1CD2, U+1CD5-1CD6, U+1CD8, U+1CE1, U+1CEA, U+1CED, U+1CF2, U+1CF5-1CF7, U+200C-200D, U+20B9, U+25CC, U+A8F1, U+11DF0-11DF1",
+    },
+  ],
   variable: "--font-sans-bengali",
 });
 
