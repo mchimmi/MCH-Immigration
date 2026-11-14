@@ -1,9 +1,11 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+import Image from "next/image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
 import { serviceSlugs, isServiceSlug } from "@/content/services";
+import { serviceImages } from "@/content/images";
 
 type Props = { params: Promise<{ locale: string; slug: string }> };
 
@@ -48,7 +50,17 @@ export default async function ServicePage({ params }: Props) {
       </Link>
 
       <h1 className="mt-6 text-title sm:text-display">{t(`${slug}.title`)}</h1>
-      <p className="mt-6 text-lede leading-relaxed text-muted">
+
+      <Image
+        src={serviceImages[slug]}
+        alt=""
+        placeholder="blur"
+        loading="eager"
+        sizes="(min-width: 768px) 46rem, 100vw"
+        className="mt-8 aspect-[16/8] w-full rounded-2xl object-cover"
+      />
+
+      <p className="mt-8 text-lede leading-relaxed text-muted">
         {t(`${slug}.intro`)}
       </p>
 
@@ -92,7 +104,7 @@ export default async function ServicePage({ params }: Props) {
           {tDetail("consultBody", { service: t(`${slug}.title`).toLowerCase() })}
         </p>
         <Link
-          href={`/kontakt?sprawa=${slug}`}
+          href="/schedule-appointment"
           className="mt-6 inline-block rounded-lg bg-burgundy px-6 py-3 text-white hover:bg-burgundy-deep"
         >
           {tDetail("consultCta")}

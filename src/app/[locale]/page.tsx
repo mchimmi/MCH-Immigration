@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { site } from "@/content/site";
+import { images } from "@/content/images";
 import { CaseFinder } from "@/components/case-finder";
+import { GoogleReviewsSection } from "@/components/google-reviews";
 
 /**
  * The full procedure list with descriptions lives at /uslugi (linked from
@@ -35,16 +38,34 @@ export default async function HomePage({ params }: Props) {
 
   return (
     <>
-      <section className="mx-auto max-w-5xl px-5 pt-16 pb-12 text-center sm:pt-24">
-        <p className="font-display text-lede text-burgundy-soft">
-          {t("tagline")}
-        </p>
-        <h1 className="mx-auto mt-5 max-w-3xl text-display">{t("title")}</h1>
-        <p className="mx-auto mt-6 max-w-2xl text-lede text-muted">{t("lede")}</p>
+      <section className="mx-auto max-w-5xl px-5 pt-16 pb-12 sm:pt-24">
+        <div className="grid items-center gap-10 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)] lg:gap-12">
+          <div className="text-center lg:text-left">
+            <p className="font-display text-lede text-burgundy-soft">
+              {t("tagline")}
+            </p>
+            <h1 className="mx-auto mt-5 max-w-3xl text-display lg:mx-0">
+              {t("title")}
+            </h1>
+            <p className="mx-auto mt-6 max-w-2xl text-lede text-muted lg:mx-0">
+              {t("lede")}
+            </p>
 
-        <p className="mt-6 text-sm text-muted">{t("languagesLine")}</p>
+            <p className="mt-6 text-sm text-muted">{t("languagesLine")}</p>
+          </div>
 
-        <div className="mx-auto mt-9 flex max-w-3xl flex-col items-stretch gap-3 sm:flex-row sm:items-center">
+          <Image
+            src={images.hero}
+            alt=""
+            placeholder="blur"
+            loading="eager"
+            fetchPriority="high"
+            sizes="(min-width: 1024px) 28rem, 100vw"
+            className="aspect-[4/3] w-full rounded-2xl object-cover object-right shadow-[0_18px_40px_-20px_rgba(67,18,29,0.45)]"
+          />
+        </div>
+
+        <div className="mx-auto mt-10 flex max-w-3xl flex-col items-stretch gap-3 sm:flex-row sm:items-center lg:mx-0 lg:max-w-none">
           <CaseFinder />
           <Link
             href="/kontakt"
@@ -81,27 +102,47 @@ export default async function HomePage({ params }: Props) {
         <h2 id="dlaczego-naglowek" className="sr-only">
           {t("why.heading")}
         </h2>
-        <ul className="grid gap-10 sm:grid-cols-3">
+        <ul className="grid gap-6 sm:grid-cols-3">
           {whyItems.map((item) => (
-            <li key={item.title}>
-              <h3 className="text-lg text-burgundy-deep">{item.title}</h3>
+            <li
+              key={item.title}
+              className="rounded-2xl border border-rule bg-white p-6 transition duration-300 ease-out hover:z-10 hover:border-burgundy/40 hover:shadow-[0_22px_45px_-24px_rgba(67,18,29,0.5)] motion-safe:hover:scale-[1.06]"
+            >
+              <span aria-hidden="true" className="block h-0.5 w-10 bg-gold" />
+              <h3 className="mt-4 text-lg text-burgundy-deep">{item.title}</h3>
               <p className="mt-2 leading-relaxed text-muted">{item.body}</p>
             </li>
           ))}
         </ul>
       </section>
 
-      <section className="mt-16 bg-beige-pale">
+      <GoogleReviewsSection locale={locale} />
+
+      <section className="bg-beige-pale">
         <div className="mx-auto max-w-5xl px-5 py-16">
           <h2 className="text-title">{t("process.heading")}</h2>
-          <ol className="mt-10 grid gap-8 sm:grid-cols-3">
-            {steps.map((s) => (
-              <li key={s.step}>
-                <span className="font-display text-title text-burgundy-soft">
-                  {s.step}
-                </span>
-                <h3 className="mt-2 text-lg">{s.title}</h3>
-                <p className="mt-2 leading-relaxed text-muted">{s.body}</p>
+          <ol className="mt-10 grid gap-6 sm:grid-cols-3">
+            {steps.map((s, i) => (
+              <li
+                key={s.step}
+                className="flex flex-col overflow-hidden rounded-2xl bg-white shadow-[0_12px_30px_-22px_rgba(67,18,29,0.45)] transition duration-300 hover:shadow-[0_22px_45px_-24px_rgba(67,18,29,0.5)] motion-safe:hover:-translate-y-1"
+              >
+                {images.processSteps[i] && (
+                  <Image
+                    src={images.processSteps[i]}
+                    alt=""
+                    placeholder="blur"
+                    sizes="(min-width: 640px) 18rem, 100vw"
+                    className="aspect-[3/2] w-full object-cover"
+                  />
+                )}
+                <div className="flex-1 p-6">
+                  <span className="inline-block rounded-full bg-beige-pale px-3 py-1 text-xs font-medium uppercase tracking-wider text-burgundy">
+                    {t("process.stepLabel", { number: s.step })}
+                  </span>
+                  <h3 className="mt-3 text-lg">{s.title}</h3>
+                  <p className="mt-2 leading-relaxed text-muted">{s.body}</p>
+                </div>
               </li>
             ))}
           </ol>
